@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clínica IMSS</title>
+    <link href="Diseño.css" rel="stylesheet" type="text/css">
+    <script>
+        function ejemplo() {
+            document.getElementById('i').setAttribute('src', 'Reduc.jpg');
+        }
+
+        function ejemplo2() {
+            document.getElementById('i').setAttribute('src', 'logo.jpeg');
+        }
+    </script>
+</head>
+
+<body>
+    
+    <header>
+        <img src="logo.jpeg" alt="Logo HTML5"
+             onmouseover="ejemplo();"
+             onmouseout="ejemplo2();"
+             id="i">
+        <h1>IMSS!</h1>
+        <h2>Clínica Santa Cruz</h2>
+        <button onclick="window.location.href='Inicio.html';">Ir a la página principal</button>
+         <BR>
+<TABLE BORDER="0" ALGIN="CENTER">
+<TD><IMG SRC="inicio.jpg" HEIGHT="100px" WIDTH="130"></IMG></TD>
+<TD><IMG SRC="AM.jpg"HEIGHT="100px" WIDTH="165"></IMG></TD>
+<TD><IMG SRC="Doctores.jpg"  HEIGHT="100px"WIDTH="130"></IMG></TD>
+<TD><IMG SRC="calendario.jpg" HEIGHT="100px" WIDTH="180"></IMG></TD>
+<TD><IMG SRC="Formulario.jpg"  HEIGHT="100px" WIDTH="155"></IMG></TD>
+<TD><IMG SRC="Signo.jpg" HEIGHT="100px" WIDTH="160"></IMG></TD>
+    </TABLE>   
+    <TABLE BORDER="1" ALGIN="CENTER">
+         <TD><H1><a href="Index.html">  Index </a><H1></TD>
+  <TD><H1><a href="Historia.html">  Historia  </a><H1></TD>
+<TD><H1><a href="Atencion_Medica.html">Atencion medica</a></H1></TD>
+<TD><H1><a href="Doctores.html">Doctores</a></TD>
+<TD><H1><a href="AgendarCita.html">Agendar cita</a></H1></TD>
+<TD><H1><a href="Formulario.html">Formulario</a></H1></TD>
+<TD><H1><a href="Sabias_Que.html">Sabias que?</a></H1></TD>
+    </TABLE>      
+ <BR>
+    <BR>
+    </BR>
+    </header>
+
+    <main>
+        <h2>Propuesta para mejorar la experiencia al agendar una cita, en el cetro de salud  </h2>
+        <h3>Bienvenido a las agendaciones de cita del IMSS.</h3>
+        <p>Para poder agendar su cita para una revisión médica llevamos a cabo mejoras que nos ayudaran a tener un mejor control sobre todas las citas, <BR>
+            que realizan las personas para poder ser atendidas a la hora y al momento que lo requieren para ello necesitariamos los siguientes datos personales:</p>
+
+        <form>
+            <label for="numero">Número de seguro social/CURP:</label><br>
+            <input type="text" id="numero" name="numero"><br><br>
+
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad"><br><br>
+
+            <label for="fecha">Fecha de la cita:</label><br>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+
+            <label for="hora">Hora de la cita:</label><br>
+            <input type="time" id="hora" name="hora" required><br><br>
+
+            <label for="sexo">Sexo:</label><br>
+            <select id="sexo" name="sexo">
+                <option value="">Seleccione una opción</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="No especificar">No especificar</option>
+                <option value="Otro">Otro</option>
+            </select><br><br>
+
+            <label for="razon">Razón o motivo:</label><br>
+            <input type="text" id="razon" name="razon"><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h3>¡Agradecemos su tiempo y confianza!</h3>
+        <p>Haz clic en el botón para regresar a la página anterior.</p>
+        <button onclick="window.history.back();">⬅ Regresar</button>
+    </main>
+
+    <footer class="footer">
+        <p>
+            Gobierno de México | Contacto | Dirección<br>
+            Kimberly Blas Francisco<br>
+            Abraham de Jesus Alberto<br>
+            Ariela Naomi Julian Morales<br>
+            Evangeline Fernanda Marcial Moreno<br>
+            Mayra Lizeth Mercado Pastrano<br>
+            Cecilia Nicolas Valles<br>
+            David Trejo Palacios
+        </p>
+        <h3>¡Contáctanos!</h3>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
+ 
+   
+    
